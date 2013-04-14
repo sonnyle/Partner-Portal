@@ -1,0 +1,16 @@
+<table>
+	<tr>
+		<th>Cuenta</th>
+		<th>Tel&oacute;fono</th>
+		<th>Capacidad</th>
+		<th>Última versión</th>
+	</tr>
+	<% @accounts.each do |account| %>
+	<tr>
+		<td><%= link_to account.Name, account %></td>
+		<td><%= account.Phone %></td>
+		<td><%= last_package_extensions(account.Id) %></td>
+		<td><%= last_package_version(account.Id) %></td>
+	</tr>
+	<% end %>
+</table>

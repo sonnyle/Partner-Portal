@@ -1,4 +1,8 @@
 Partnerportal::Application.routes.draw do
-  root to: "packages#index"
 
+  root to: "accounts#index"
+
+  resources :packages
+
+  resources :accounts
 end

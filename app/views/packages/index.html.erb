@@ -1,0 +1,7 @@
+<ul>
+<% @packages.each do |package| %>
+	<li>
+		<%= package.Name %> | <%= account(package.Account__c).Name %>
+	</li>
+<% end %>
+</ul>

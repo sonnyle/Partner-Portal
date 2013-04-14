@@ -1,0 +1,28 @@
+<p>
+	<b>Nombre:</b> <%= @account.Name %>
+</p>
+<p>
+	<b>Teléfono:</b> <%= @account.Phone %>
+</p>
+<p>
+	<b>Email:</b> <%= @account.BillingCity %>
+</p>
+<p>
+	<b>Sitio Web:</b> <%= @account.Website %>
+</p>
+
+<table>
+	<tr>
+		<th>IT</th>
+		<th>Capacidad</th>
+		<th>Última versión</th>
+	</tr>
+	<% packages_by_account(@account.Id).each do |package| %>
+		<tr>
+			<td><%= package.Name %></td>
+			<td><%= package.Extensions__c.to_i %></td>
+			<td><%= package.Version__c %></td>
+		</tr>
+	<% end %>
+</table>
+
