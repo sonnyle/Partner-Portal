@@ -29,7 +29,6 @@ GEM
       activesupport (= 3.0.9)
     activesupport (3.0.9)
     arel (2.0.10)
-    bcrypt-ruby (3.0.1)
     builder (2.1.2)
     databasedotcom (1.3.2)
       activesupport
@@ -82,7 +81,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt-ruby
   databasedotcom
   databasedotcom-rails
   rails (= 3.0.9)
