@@ -5,3 +5,11 @@ gem 'sqlite3'
 gem 'databasedotcom'
 gem 'databasedotcom-rails'
 gem 'devise'
+
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end
+
+gem 'jquery-rails'

@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
 	include Databasedotcom::Rails::Controller
 
+	# Looks for for all the accounts of the related accounts model from that specific user
+	# and puts them in an array for the Accounts controller
 	def accounts_from_current_user
 		accounts = []
 		current_user.RelatedAccounts.each do |relatedaccount|

@@ -8,10 +8,11 @@ class AccountsController < ApplicationController
   	respond_to do |format|
   		format.html
   		format.csv
-  		format.xls 
+  		format.xls
   	end
   end
 
+  # Hace falta proteger el metodo show para que solo muestre las cuentas del current_user
   def show
   	@account = Account.find(params[:id])
   end
