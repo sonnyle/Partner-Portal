@@ -1,9 +1,9 @@
 <table>
 	<tr>
 		<th>Cuenta</th>
-		<th>Tel&oacute;fono</th>
+		<th>Telefono</th>
 		<th>Capacidad</th>
-		<th>Última versión</th>
+		<th>Ultima version</th>
 	</tr>
 	<% @accounts.each do |account| %>
 	<tr>
@@ -14,3 +14,7 @@
 	</tr>
 	<% end %>
 </table>
+
+<p>
+	<%= link_to "Exportar a Excel", accounts_path(format: "xls") %>
+</p>
