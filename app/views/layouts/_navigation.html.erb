@@ -28,4 +28,9 @@
     <%= link_to('Crear Cuenta', new_user_registration_path)  %>
     </li>
   <% end %>
+  <% if user_signed_in? && current_user.admin? %>
+  	<li>
+  		<%= link_to 'Administrar Usuarios', users_path %>
+  	</li>
+  <% end %>
 </ul>
