@@ -122,6 +122,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  builder
   coffee-rails
   databasedotcom
   databasedotcom-rails
