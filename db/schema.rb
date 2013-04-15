@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20130415063914) do
 
   create_table "related_accounts", :force => true do |t|
     t.string   "name"
+    t.string   "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
