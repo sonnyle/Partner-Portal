@@ -1,0 +1,2 @@
+module RelatedAccountsHelper
+end

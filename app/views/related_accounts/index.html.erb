@@ -1,0 +1,6 @@
+<h1>Cuentas Relacionadas a este Usuario</h1>
+<ul>
+	<% @related_accounts.each do |channel| %>
+		<li><%= channel.name %></li>
+	<% end %>
+</ul>
