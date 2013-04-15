@@ -2,7 +2,7 @@ Partnerportal::Application.routes.draw do
 
   devise_for :users
 
-  root to: "accounts#index"
+  root to: "static#index"
 
   resources :packages
 
